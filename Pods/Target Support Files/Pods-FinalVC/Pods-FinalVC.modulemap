@@ -1,0 +1,6 @@
+framework module Pods_FinalVC {
+  umbrella header "Pods-FinalVC-umbrella.h"
+
+  export *
+  module * { export * }
+}
