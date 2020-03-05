@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         } else if passwordTextField.text == nil {
             passwordTextField.errorMessage = "Enter Your Password"
         } //else if
-        
+        postdata()
     }
     
     @IBAction func signUpButton(_ sender: Any) {
@@ -86,6 +86,9 @@ class ViewController: UIViewController {
                     //create json object from data
                     if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                         print(json)
+                        DispatchQueue.main.async {
+                            self.landingPage()
+                        }
                         // handle json...
                     }
                 } catch let error {
@@ -96,6 +99,7 @@ class ViewController: UIViewController {
             task.resume()
         }
     
+  
     
 }
 
