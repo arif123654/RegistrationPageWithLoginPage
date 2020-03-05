@@ -81,6 +81,8 @@
                     <navigationItem key="navigationItem" id="2il-6H-Y8h"/>
                     <connections>
                         <outlet property="loginButton" destination="zXS-38-CZ1" id="GPP-Zw-785"/>
+                        <outlet property="mobileTextField" destination="Msl-e7-i9Z" id="FtE-AM-JHO"/>
+                        <outlet property="passwordTextField" destination="ohm-fv-Xpk" id="prd-4j-XfL"/>
                         <outlet property="signUpButton" destination="frE-kj-fnn" id="JM4-rF-YlS"/>
                     </connections>
                 </viewController>
@@ -342,15 +344,10 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cK-4F-eZy" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                 <rect key="frame" x="20" y="199" width="374" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="First Name"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="First Name"/>
                                 </userDefinedRuntimeAttributes>
@@ -488,6 +485,15 @@
                         <viewLayoutGuide key="safeArea" id="YQd-gc-0UF"/>
                     </view>
                     <connections>
+                        <outlet property="confirmPasswordTextField" destination="WO9-vA-kQU" id="Kj0-X0-Mj9"/>
+                        <outlet property="districtTextField" destination="ZiD-WO-fv3" id="62v-zw-bCj"/>
+                        <outlet property="emailTextField" destination="LB9-8i-9hS" id="6NB-dN-V9c"/>
+                        <outlet property="firatNameTextField" destination="9cK-4F-eZy" id="VIP-j7-isA"/>
+                        <outlet property="genderTextField" destination="CLE-az-utS" id="Hs6-5f-VG8"/>
+                        <outlet property="lastNameTextField" destination="BSM-UX-LoS" id="OGU-OX-OQU"/>
+                        <outlet property="locationTextField" destination="UAn-7l-e8J" id="xGu-Oo-nRT"/>
+                        <outlet property="mobileTextField" destination="daO-vE-fdy" id="AGA-Da-3Hu"/>
+                        <outlet property="passwordTextField" destination="SUJ-xL-UL3" id="8eW-Mi-VYV"/>
                         <outlet property="signUpButton" destination="Lzb-ia-iTC" id="LHl-Wj-DA7"/>
                     </connections>
                 </viewController>
